@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <h1 id="title">Ontario Universities Survey Form</h1>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <p id="description">Please take the time to fill out the survey below. This survey is required to be taken by students currently studying at an ontario university. This survey is a way for a university to improve itself based on students opinions. (you must be above 18 years of age)</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your full name" required>
+      <label for="email" id="email-label">Email </label>
+      <input id="email" type="email" placeholder="Enter a valid email" required>
+      <label for="number" id="number-label">Year</label>
+      <input id="number" type="number" placeholder="Enter the year you are currently taking at your university" max="5" min="1" required>
+
+<label for="schooling"> Select the university you're currently attending
+
+      <select id="dropdown" required>
+          <option value="1">Other</option>
+          <option value="2">University of Toronto</option>
+          <option value="3">Waterloo University</option>
+          <option value="4">McMasters University</option>
+          <option value="5">York University</option>
+          <option value="6">Brock University</option>
+          <option value="7">Trent University</option>
+          <option value="8">Ontario Tech University</option>
+          <option value="9">Carleton University</option>
+          <option value="10">Toronto Metropolitan University</option>
+          <option value="11">University of Windsor</option>
+          <option value="12">OCAD University</option>
+          <option value="13">Queen’s University</option>
+          <option value="14">University of Guelph</option>
+          <option value="15">Western University</option>
+          <option value="16">Wilfrid Laurier University</option>
+      </select>
+    </label>
+
+      <fieldset>
+        <legend>What is your degree level? (Required)</legend>
+          <label for="Bachelor’s">
+            <input class="inline" id="Bachelor’s" name="degree" type="radio" value="Bachelor’s" checked> Bachelor’s 
+          </label>
+          <label for="Masters">
+            <input class="inline" id="Masters" name="degree" type="radio" value="Masters"> Masters
+          </label>  
+          <label for="Doctoral">
+            <input class="inline" id="Doctoral" name="degree" type="radio" value="Doctoral">Doctoral
+         </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Do you live on residence?(Required)</legend>
+        <label for="yes"><input class="inline" id="yes" name="residence" value="yes" type="radio" checked> Yes</label>
+        <label for="no"><input class="inline" id="no" name="residence" value="no" type="radio">No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select all that apply.</legend>
+        <label for="checkbox1">
+          <input type="checkbox" class="inline" value="checkbox1">My university provides me with many food options to choose from on campus.
+        </label>
+        <label for="checkbox2">
+          <input type="checkbox" class="inline" value="checkbox2">My university has a friendly and respectful envioronment.
+        </label>
+        <label for="checkbox3"> 
+          <input type="checkbox" class="inline" value="checkbox3">My university always provides me with the academic support I need.
+        </label>
+        <label for="checkbox4">  
+          <input type="checkbox" class="inline" value="checkbox4">My university provides me with a variety of resourses.
+        </label>
+        <label for="checkbox5">
+          <input type="checkbox" class="inline" value="checkbox5">The professors at my university are helpful and are there for extra help when I need it.
+        </label>
+        <label for="checkbox6"> 
+          <input type="checkbox" class="inline" value="checkbox6">There are a number of quiet places on campus where I can sit and study.
+        </label>
+        <label for="checkbox7">
+          <input type="checkbox" class="inline" value="checkbox7">I get treated equally amoungst my peers and by my professors no matter my gender or race.
+        </label>
+        <label for="checkbox8"> 
+          <input type="checkbox" class="inline" value="checkbox8">I feel safe at my university.
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          <legend>Additional comments</legend>
+          <textarea id="feedback" name="feedback" rows="5" cols="63" placeholder="Please type out any additional comments or feedback about your university you might have"></textarea>
+        </label>
+      </fieldset>
+
+      <legend>Thank you for taking our survey!!!</legend>
+      <input
+      id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
